@@ -1,11 +1,9 @@
 package controllers;
 
-import model.Currency;
+import model.Currencies.Currency;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import java.util.List;
 
 @FeignClient(name = "openExchange-service", url = "https://openexchangerates.org")
 public interface openExchangeServiceProxy{
